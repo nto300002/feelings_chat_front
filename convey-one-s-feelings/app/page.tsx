@@ -1,10 +1,10 @@
 // 先頭に以下を追加
-import { TestAuthButton } from "@/components/test-auth-button"
+import { TestAuthButton } from '@/components/test-auth-button';
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -37,12 +37,15 @@ export default function Home() {
                   d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4-4-4z"
                 />
               </svg>
-              <h1 className="text-2xl md:text-3xl font-medium tracking-wider">convey-one&apos;s-feelings</h1>
+              <h1 className="text-2xl md:text-3xl font-medium tracking-wider">
+                convey-one&apos;s-feelings
+              </h1>
             </div>
 
             <p className="text-center text-gray-600 max-w-lg leading-relaxed">
               気持ちの伝え方がわからない、言い出しづらい事がある時、
-              このアプリがあなたのコミュニケーションのお手伝いをする チャットアプリです。
+              このアプリがあなたのコミュニケーションのお手伝いをする
+              チャットアプリです。
             </p>
 
             <Button
@@ -51,10 +54,10 @@ export default function Home() {
             >
               <Link href="/sign-up">試してみる</Link>
             </Button>
+            <TestAuthButton />
           </div>
         </Card>
       </div>
     </main>
-  )
+  );
 }
-

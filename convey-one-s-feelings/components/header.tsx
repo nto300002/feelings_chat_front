@@ -1,15 +1,15 @@
-"use client"
+'use client';
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu"
-import { BellIcon, UserCircle, ChevronDownIcon } from "lucide-react"
+} from '@/components/ui/dropdown-menu';
+import { BellIcon, UserCircle, ChevronDownIcon } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -47,7 +47,9 @@ export default function Header() {
               <DropdownMenuItem>
                 <Link href="/members">メンバー一覧</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>プロフィール</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/profile">プロフィール</Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/add-member">メンバー追加</Link>
               </DropdownMenuItem>
@@ -63,6 +65,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
-
