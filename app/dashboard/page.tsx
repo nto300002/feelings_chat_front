@@ -1,6 +1,6 @@
-import Header from "@/components/header"
-import StatusUpdateForm from "@/components/status-update-form"
-import ChatList from "@/components/chat-list"
+import Header from '@/components/header';
+import StatusUpdateForm from '@/components/status-update-form';
+import ChatList from '@/components/chat-list';
 
 export default function DashboardPage() {
   return (
@@ -14,6 +14,5 @@ export default function DashboardPage() {
         </section>
       </main>
     </div>
-  )
+  );
 }
-

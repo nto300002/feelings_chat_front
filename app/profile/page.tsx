@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import { ProfileInfo } from "@/components/profile-info"
+import Header from '@/components/header';
+import { ProfileInfo } from '@/components/profile-info';
 
 export default function ProfilePage() {
   return (
@@ -10,6 +10,5 @@ export default function ProfilePage() {
         <ProfileInfo />
       </main>
     </div>
-  )
+  );
 }
-

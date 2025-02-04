@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import { AddMemberForm } from "@/components/add-member-form"
+import Header from '@/components/header';
+import { AddMemberForm } from '@/components/add-member-form';
 
 export default function AddMemberPage() {
   return (
@@ -10,6 +10,5 @@ export default function AddMemberPage() {
         <AddMemberForm />
       </main>
     </div>
-  )
+  );
 }
-

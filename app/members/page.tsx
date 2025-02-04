@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import { MemberList } from "@/components/member-list"
+import Header from '@/components/header';
+import { MemberList } from '@/components/member-list';
 
 export default function MembersPage() {
   return (
@@ -10,6 +10,5 @@ export default function MembersPage() {
         <MemberList />
       </main>
     </div>
-  )
+  );
 }
-

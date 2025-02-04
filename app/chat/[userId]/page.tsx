@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import { ChatInterface } from "@/components/chat-interface"
+import Header from '@/components/header';
+import { ChatInterface } from '@/components/chat-interface';
 
 export default function ChatPage({ params }: { params: { userId: string } }) {
   return (
@@ -9,6 +9,5 @@ export default function ChatPage({ params }: { params: { userId: string } }) {
         <ChatInterface userId={params.userId} />
       </main>
     </div>
-  )
+  );
 }
-
