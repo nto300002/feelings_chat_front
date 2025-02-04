@@ -1,3 +1,5 @@
+import path from 'path'
+
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -17,10 +19,17 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
   },
+  output: 'standalone', // Docker用に最適化
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(process.cwd()),
+      '@/components': path.resolve(process.cwd(), 'components')
+    };
+
+    return config;
+  }
 }
 
 mergeConfig(nextConfig, userConfig)
